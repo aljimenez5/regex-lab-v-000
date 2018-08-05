@@ -15,9 +15,13 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if phone.scan(/[a-z]/i) == true
+  if phone.scan(/\d{1}/) == true 
+    
+    phone.scan(/[a-z]/i) == true
     return false
   else
     return true
   end
 end
+
+phone.scan(/\d{1}/) ==&& 
