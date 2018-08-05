@@ -17,4 +17,5 @@ end
 def valid_phone_number?(phone)
   until phone.scan(/[^A-Z]/i) == true
     return true
+  end
 end
